@@ -1,5 +1,10 @@
 package com.evening.bean;
 
+
+/**
+ * 客户实体类
+ * @author Evening
+ */
 public class Customer {
     private int id;
     private String customName;

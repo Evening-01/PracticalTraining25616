@@ -1,5 +1,10 @@
 package com.evening.bean;
 
+/**
+ * 用户实体类
+ * @author evening
+ */
+
 public class User {
     private int id;
     private String userName;
