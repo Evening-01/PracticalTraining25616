@@ -24,4 +24,4 @@ Kotlin Learning Records
 
 ## 实训要求：
 
-[资源以及需求]()
+[资源以及需求](https://github.com/Evening-01/PracticalTraining25616/tree/master/src/main/resources/requirement)
