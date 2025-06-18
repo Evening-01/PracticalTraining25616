@@ -68,7 +68,7 @@ public class MainFrame extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
 
-                URL imageUrl = MainFrame.class.getResource("/com/evening/picture/bj.jpg");
+                URL imageUrl = MainFrame.class.getResource("/picture/bj.jpg");
 
                 if (imageUrl != null) {
                     ImageIcon icon = new ImageIcon(imageUrl);
