@@ -22,9 +22,9 @@ public class AboutUs extends JFrame implements ActionListener {
 
     public AboutUs() {
         // 初始化组件
-        label1 = new JLabel(a("=0DNzQzPs8herlGaL3fvL39sAbetfrtsGfuv"));
+        label1 = new JLabel(a("9QzM08DLfo3aph2y937ydPreVHevq/MvAbetfrtsGfuv"));
         label1.setFont(new Font("宋体", Font.PLAIN, 16));
-        label2 = new JLabel(a("=cTN5Q3KrohbotWaphmar5WaAbetVb+vjzMvhnevOvts"));
+        label2 = new JLabel(a("=cTN5Q3KrohbotWaphmar5WaAbetrTfv0j9s"));
         label2.setFont(new Font("宋体", Font.PLAIN, 16));
 
         closeButton = new JButton("关闭");
@@ -34,7 +34,7 @@ public class AboutUs extends JFrame implements ActionListener {
         panel.setLayout(null);
 
         label1.setBounds(60, 30, 250, 30);
-        label2.setBounds(40, 70, 300, 30);
+        label2.setBounds(60, 70, 300, 30);
         closeButton.setBounds(130, 120, 80, 30);
 
         panel.add(label1);
