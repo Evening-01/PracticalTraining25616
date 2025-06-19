@@ -26,6 +26,18 @@ Kotlin Learning Records
 
 ---
 
+## 数据库密码：
+- 账户：admin
+- 密码：123
+
+---
+
+## ⚠严重：
+- 大多听闻某些人实训使用该库直接复制粘贴，而无任何思考过程，此仓库中更新了未知代码
+- 该代码以认真思考，学习为目的，若真正开完该库后您可以发现该处细节
+
+
+
 ## 实训要求：
 
 [资源以及需求](https://github.com/Evening-01/PracticalTraining25616/tree/master/src/main/resources/requirement)
