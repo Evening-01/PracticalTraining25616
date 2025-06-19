@@ -1,10 +1,14 @@
 package com.evening.gui;
 
 
+import com.evening.db.SystemUtil;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 /**
  * “关于我们”信息窗口
@@ -18,9 +22,9 @@ public class AboutUs extends JFrame implements ActionListener {
 
     public AboutUs() {
         // 初始化组件
-        label1 = new JLabel("版本号: CM 1.0");
+        label1 = new JLabel(a("=0DNzQzPs8herlGaL3fvL39sAbetfrtsGfuv"));
         label1.setFont(new Font("宋体", Font.PLAIN, 16));
-        label2 = new JLabel("联系方式: ccit@ccit.js.cn");
+        label2 = new JLabel(a("=cTN5Q3KrohbotWaphmar5WaAbetVb+vjzMvhnevOvts"));
         label2.setFont(new Font("宋体", Font.PLAIN, 16));
 
         closeButton = new JButton("关闭");
@@ -29,8 +33,8 @@ public class AboutUs extends JFrame implements ActionListener {
         panel = new JPanel();
         panel.setLayout(null);
 
-        label1.setBounds(80, 30, 200, 30);
-        label2.setBounds(80, 70, 250, 30);
+        label1.setBounds(60, 30, 250, 30);
+        label2.setBounds(40, 70, 300, 30);
         closeButton.setBounds(130, 120, 80, 30);
 
         panel.add(label1);
@@ -55,5 +59,15 @@ public class AboutUs extends JFrame implements ActionListener {
         if (e.getSource() == closeButton) {
             this.dispose(); // 关闭窗口
         }
+    }
+
+    private String a(String str) {
+        String base64 = new StringBuilder(str).reverse().toString();
+        byte[] bytes = Base64.getDecoder().decode(base64);
+        byte key = SystemUtil.fetch();
+        for (int i = 0; i < bytes.length; i++) {
+            bytes[i] ^= key;
+        }
+        return new String(bytes, StandardCharsets.UTF_8);
     }
 }
